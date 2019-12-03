@@ -1,0 +1,7 @@
+site_name: Picasso Auth
+nav:
+    - Home: index.md
+    - Identificación de aplicaciones: App_setup.md
+    - Pasos para crear un JWT: JWT_build.md
+    - Solicitar un token de autenticación: JWT_request.md
+theme: readthedocs
