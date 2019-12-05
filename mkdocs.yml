@@ -6,7 +6,7 @@ nav:
     - Solicitar un token de autenticación: JWT_request.md
     - Depósito con activación: Deposit.md
     - Anulación de un depósito: DepositRefund.md
-    Reversos:
-      - De depósito con activación: DepositReverse.md
-      - De anulación: DepositRefundReverse.md
+    - Reversos:
+       - De depósito con activación: DepositReverse.md
+       - De anulación: DepositRefundReverse.md
 theme: readthedocs
