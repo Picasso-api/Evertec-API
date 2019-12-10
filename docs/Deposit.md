@@ -12,7 +12,7 @@ Procesa una solicitud financiera de depósito con activación de una tarjeta.
 ```json
 {
   "TransactionId": "f4t14a9b-42b1-4dde-a45d-4568a99b1f93",
-  "Account": "123456789",
+  "Account": "YPjZbxCT3ABC2MBl74uuWvu6mBNa9BO3JUiLA9qc0+uYl4WeJ12PGgvxq3VrKVq3vRE5M0HjRNyDUKuv3+boXk1AvjLLXgB1nF1bGeZOg+ASx0euXajFE/4Kwg2bHF1QmlVakn6vZzDBanptkXIzAU9CrnCoEnrtuUgZmCwasiY=",
   "AccountType": "11",
   "AcquirerId": "20000000001",
   "CardAcceptor": "000000000000013",
@@ -27,7 +27,7 @@ Procesa una solicitud financiera de depósito con activación de una tarjeta.
 Campo | Tipo de dato| Descripción | Requerido
 :---: | :----------:| ----------- | :-------:
 TransactionId | string |Identificador de la transacción enviada.| [Si]
-Account | string | Número de la tarjeta que se va a activar. | [ Si ]
+Account | string | Número de la tarjeta que se va a activar. Se debe enviar com una cadena cifrada con certificado de confianza. | [ Si ]
 AccountType | string | Identificador del tipo de cuenta asociado a la tarjeta. Generalmente este valor lo debe "ingresar/seleccionar/establecer" el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia. | [ Si ]
 AcquirerId | string | Identificador del adquiriente que realiza la activación de la tarjeta. | [ Si ]
 CardAcceptor | string | Código del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
