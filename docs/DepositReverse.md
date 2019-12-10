@@ -1,10 +1,10 @@
-# Anulación de Depósito con activación
+# Reverso de Depósito con activación
 
-Procesa una solicitud financiera de anulación de un depósito con activación de una tarjeta.
+Procesa una solicitud financiera de reverso de un depósito con activación de una tarjeta.
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
-| POST  | http://localhost/financial/deposit/refund     |          [ Si ]        |
+| PATCH  | http://localhost/financial/deposit           |          [ Si ]        |
 
 
 ## Datos de la solicitud (body)
@@ -42,9 +42,9 @@ Esta operación no retorna información adicional al código de estado de HTTP d
 
 HttpStatus | Tipo | Descripción
 :---: | :--------: | ------------
-200 | int | La solicitud de anulación de la transacción de depósito con activación de la tarjeta se procesó satisfactoriamente.
+200 | int | La solicitud de reverso se procesó satisfactoriamente.
 400 | int | Error en los datos enviados para realizar la transacción.
-406 | int | La solicitud de anulación de la transacción de depósito con activación de la tarjeta no se pudo procesar de manera satisfactoria.
+406 | int | La solicitud de reverso no se pudo procesar de manera satisfactoria.
 
 Cuando el estatus de la operación es 200 (exitoso), el cuerpo de la respuesta incluye el número de autorización generado:
 

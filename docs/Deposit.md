@@ -15,7 +15,7 @@ Procesa una solicitud financiera de depósito con activación de una tarjeta.
   "Account": "123456789",
   "AccountType": "11",
   "AcquirerId": "20000000001",
-  "CardAcceptorId": "000000000000013"
+  "CardAcceptor": "000000000000013",
   "CardAcceptorName": "Almacen prueba",
   "TerminalId": "132456",
   "Amount" : 99999
@@ -27,10 +27,10 @@ Procesa una solicitud financiera de depósito con activación de una tarjeta.
 Campo | Tipo de dato| Descripción | Requerido
 :---: | :----------:| ----------- | :-------:
 TransactionId | string |Identificador de la transacción enviada.| [Si]
-Account | string | Número del bolsillo de la tarjeta que se va a activar. | [ Si ]
-AccountType | string | Número de la tarjeta que se va a activar. | [ Si ]
+Account | string | Número de la tarjeta que se va a activar. | [ Si ]
+AccountType | string | Identificador del tipo de cuenta asociado a la tarjeta. Generalmente este valor lo debe "ingresar/seleccionar/establecer" el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia. | [ Si ]
 AcquirerId | string | Identificador del adquiriente que realiza la activación de la tarjeta. | [ Si ]
-CardAcceptorId | string | Código del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
+CardAcceptor | string | Código del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
 CardAcceptorName | string | Nombre del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
 TerminalId | string | Identificador de la terminal desde la cual se realiza la operación de la activación de la tarjeta. | [ Si ]
 Amount | int | Valor de la transacción (activación). Cantidad de dinero con el que se activa la tarjeta. | [ Si ] 
