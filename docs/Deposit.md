@@ -44,6 +44,7 @@ HttpStatus | Tipo | Descripción
 :---: | :--------: | ------------
 200 | int | La transacción de depósito con activación de la tarjeta se realizó de manera satisfactoria.
 400 | int | Error en los datos enviados para realizar la transacción.
+401 | int | La solicitud requiere autenticación de usuario. Debe repetir la solicitud con un campo de encabezado de autorización adecuado con las credenciales de autorización provistas.
 406 | int | La transacción de depósito con activación de la tarjeta no se pudo realizar de manera satisfactoria.
 
 Cuando el estatus de la operación es 200 (exitoso), el cuerpo de la respuesta incluye el número de autorización generado:
