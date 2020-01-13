@@ -17,7 +17,7 @@ Procesa una solicitud financiera de anulación de un depósito con activación d
   "AcquirerId": "20000000001",
   "CardAcceptor": "000000000000013",
   "CardAcceptorName": "Almacen prueba",
-  "TerminalId": "132456",
+  "TerminalId": "13245678",
   "Amount" : 99999
 }
 ```
@@ -32,7 +32,7 @@ AccountType | string | Identificador del tipo de cuenta asociado a la tarjeta. G
 AcquirerId | string | Identificador del adquiriente que realiza la activación de la tarjeta. | [ Si ]
 CardAcceptor | string | Código del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
 CardAcceptorName | string | Nombre del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
-TerminalId | string | Identificador de la terminal desde la cual se realiza la operación de la activación de la tarjeta. | [ Si ]
+TerminalId | string | Identificador de la terminal desde la cual se realiza la operación de la activación de la tarjeta. Campo numérico de 8 dígitos. | [ Si ]
 Amount | int | Valor de la transacción (activación). Cantidad de dinero con el que se activa la tarjeta. | [ Si ] 
 
 ## Datos de la respuesta
