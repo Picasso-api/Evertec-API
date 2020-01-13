@@ -7,7 +7,6 @@ Procesa una solicitud financiera de depósito con activación de una tarjeta.
 | POST  | https://[server-ip]:[port]/deposit            |          [ Si ]        |
 
 server-ip: Dirección IP del servidor de aplicación.
-
 port: Número de puerto de aplicación. 
 
 ## Datos de la solicitud (body)
@@ -15,7 +14,7 @@ port: Número de puerto de aplicación.
 ```json
 {
   "Account": "11",
-  "Amount" : "99999"
+  "Amount" : "99999",
   "AcquirerId": "99999999999",
   "CardAcceptor": "999999999999999",
   "CardAcceptorName": "XXXXXXXXXXXXXX",
