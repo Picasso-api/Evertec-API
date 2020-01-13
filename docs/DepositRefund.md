@@ -11,15 +11,13 @@ Procesa una solicitud financiera de anulación de un depósito con activación d
 
 ```json
 {
-  "MsgType": "0200",
-  "TranType": "02",
+  "TransactionId": "cbuVWVPrWqBoaaC6N7dQJh80FUX6gC3fuf60tbbPtRAer8YybBWK8zk6WZ6ZgSvz",
   "Account": "11",
   "Amount": 1000,
   "AcquirerId": "20000000001",
   "CardAcceptor": "000000000000013",
   "TerminalId": "00000030",
   "CardAcceptorName": "PRUEBA",
-  "TransactionId": "cbuVWVPrWqBoaaC6N7dQJh80FUX6gC3fuf60tbbPtRAer8YybBWK8zk6WZ6ZgSvz",
   "AuthNumber": "105654000030",
   "Pan": "6395298087291697205"
 }
@@ -30,13 +28,13 @@ Procesa una solicitud financiera de anulación de un depósito con activación d
 Campo | Tipo de dato| Descripción | Requerido
 :---: | :--------:| ------------ | :-----:
 TransactionId | string |Identificador de la transacción enviada.| [Si]
-Account | string | Número de la tarjeta que se va a activar. Se debe enviar com una cadena cifrada con certificado de confianza. | [ Si ]
-AccountType | string | Identificador del tipo de cuenta asociado a la tarjeta. Generalmente este valor lo debe "ingresar/seleccionar/establecer" el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia. | [ Si ]
+Account | string | Identificador del tipo de cuenta asociado a la tarjeta. Generalmente este valor lo debe "ingresar/seleccionar/establecer" el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia. | [ Si ]
 AcquirerId | string | Identificador del adquiriente que realiza la activación de la tarjeta. | [ Si ]
 CardAcceptor | string | Código del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
-CardAcceptorName | string | Nombre del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
 TerminalId | string | Identificador de la terminal desde la cual se realiza la operación de la activación de la tarjeta. Campo numérico de 8 dígitos. | [ Si ]
-Amount | int | Valor de la transacción (activación). Cantidad de dinero con el que se activa la tarjeta. | [ Si ] 
+CardAcceptorName | string | Nombre del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
+AuthNumber | string | Número de autorización generado por el sistema para la transacción original de depósito. | [ Si ]
+Pan | string | Número de la tarjeta que se va a activar. Se debe enviar com una cadena cifrada con certificado de confianza. | [ Si ]
 
 ## Datos de la respuesta
 Esta operación no retorna información adicional al código de estado de HTTP de acuerdo con la especificación RFC 2616. Si la respuesta no es `HttpStatus` 200, en el campo `Reason` de la respuesta encontrará un mensaje que describe de forma detallada el resultado de la operación.
