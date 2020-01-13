@@ -11,15 +11,15 @@ Procesa una solicitud financiera de anulación de un depósito con activación d
 
 ```json
 {
-  "TransactionId": "cbuVWVPrWqBoaaC6N7dQJh80FUX6gC3fuf60tbbPtRAer8YybBWK8zk6WZ6ZgSvz",
+  "TransactionId": "110ea879-9442-40c5-a370-fea35085d67a",
   "Account": "11",
-  "Amount": 1000,
-  "AcquirerId": "20000000001",
-  "CardAcceptor": "000000000000013",
-  "TerminalId": "00000030",
-  "CardAcceptorName": "PRUEBA",
-  "AuthNumber": "105654000030",
-  "Pan": "6395298087291697205"
+  "Amount": 99999,
+  "AcquirerId": "99999999999",
+  "CardAcceptor": "999999999999999",
+  "TerminalId": "99999999",
+  "CardAcceptorName": "XXXXXXXXXXXXXX",
+  "AuthNumber": "999999999999",
+  "Pan": "h0rgmuOnbrdcYK7lrEGU+oFTEZVA16zEwLXUatIg5fwGdq6/N+ap/Oz8qg1PHFzsRc77MUCKkXUI+BwROe/wc62tScDrGlxIDvG1jIZApNNAOdPAoif/qctwLLniSJCCThhm11nVXOdzPEQtOprvWki7mRri1Xt8ZfrdkCeCBPs6nx3I6zfzjFa3+FR4p+ZcqB1CgFwXPp8Glandb+0OtYMCevwFDB3SfEPI3Q3/v0t39KYLHYnq4m8EY4PbPgCVC0LLcU2v2KxCjcOWMemGrGP6fX33I6kdHTyhS3bSNONBG80oRxH39/qfcyzQHJ3a4Ym/H6kcXB7Q+XPiAjwiCw=="
 }
 ```
 
