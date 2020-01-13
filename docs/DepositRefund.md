@@ -11,14 +11,17 @@ Procesa una solicitud financiera de anulación de un depósito con activación d
 
 ```json
 {
-  "TransactionId": "f4t14a9b-42b1-4dde-a45d-4568a99b1f93",
-  "Account": "YPjZbxCT3ABC2MBl74uuWvu6mBNa9BO3JUiLA9qc0+uYl4WeJ12PGgvxq3VrKVq3vRE5M0HjRNyDUKuv3+boXk1AvjLLXgB1nF1bGeZOg+ASx0euXajFE/4Kwg2bHF1QmlVakn6vZzDBanptkXIzAU9CrnCoEnrtuUgZmCwasiY=",
-  "AccountType": "11",
+  "MsgType": "0200",
+  "TranType": "02",
+  "Account": "11",
+  "Amount": 1000,
   "AcquirerId": "20000000001",
   "CardAcceptor": "000000000000013",
-  "CardAcceptorName": "Almacen prueba",
-  "TerminalId": "13245678",
-  "Amount" : 99999
+  "TerminalId": "00000030",
+  "CardAcceptorName": "PRUEBA",
+  "TransactionId": "cbuVWVPrWqBoaaC6N7dQJh80FUX6gC3fuf60tbbPtRAer8YybBWK8zk6WZ6ZgSvz",
+  "AuthNumber": "105654000030",
+  "Pan": "6395298087291697205"
 }
 ```
 
