@@ -12,7 +12,7 @@ Procesa una solicitud financiera de anulación de un depósito con activación d
 ```json
 {
   "Account": "11",
-  "Amount": 99999,
+  "Amount": "99999",
   "AcquirerId": "99999999999",
   "CardAcceptor": "999999999999999",
   "TerminalId": "99999999",
