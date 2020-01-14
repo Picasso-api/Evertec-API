@@ -9,8 +9,6 @@ Procesa una solicitud financiera de reveso de una anulación de un depósito con
 server-ip: Dirección IP del servidor de aplicación.  
 port: Número de puerto de aplicación. 
 
-[^Segmentos de URL]: La información entre corchetes en la URL se denomina segmentos de URL y aplican solo para algunas operaciones. Cuando aparezcan en un ejemplo, deben ser reemplazados por sus valores correspondientes omitiendo los corchetes. Por ejemplo, sin en la URL de ejemplo apareciera http://localhost/api/operation/value/{value}, para establecer el valor de  `value` en la solicitud a la cadena `abc`, la URL final se vería de la siguiente forma: http://localhost/api/operation/value/abc 
-
 ## Datos de la solicitud (body)
 
 ```json
