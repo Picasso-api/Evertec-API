@@ -4,7 +4,7 @@ Procesa una solicitud financiera de reveso de una anulación de un depósito con
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
-| PATCH  | https://[server-ip]:[port]/deposit/refund/reverese    |          [ Si ]        |
+| POST  | https://[server-ip]:[port]/deposit/refund/reverese    |          [ Si ]        |
 
 server-ip: Dirección IP del servidor de aplicación.  
 port: Número de puerto de aplicación. 
