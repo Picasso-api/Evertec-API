@@ -6,6 +6,8 @@ Procesa una solicitud financiera de anulación de un depósito con activación d
 | :---: | --------------------------------------------- | :--------------------: |
 | POST  | https://[server-ip]:[port]/deposit/refund     |          [ Si ]        |
 
+server-ip: Dirección IP del servidor de aplicación.  
+port: Número de puerto de aplicación. 
 
 ## Datos de la solicitud (body)
 
