@@ -44,6 +44,7 @@ HttpStatus | Tipo | Descripción
 200 | int | La solicitud de reverso se procesó satisfactoriamente.
 400 | int | Error en los datos enviados para realizar la transacción.
 401 | int | La solicitud requiere autenticación de usuario. Debe repetir la solicitud con un campo de encabezado de autorización adecuado con las credenciales de autorización otorgadas.406 | int | La solicitud de reverso no se pudo procesar de manera satisfactoria.
+406 | int | La solicitud de reverso de depósito no se pudo procesar de manera satisfactoria.
 
 Cuando el estatus de la operación es 200 (exitoso), el cuerpo de la respuesta incluye el número de autorización generado:
 
