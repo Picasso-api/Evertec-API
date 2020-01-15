@@ -4,7 +4,7 @@ Procesa una solicitud financiera de reveso de una anulación de un depósito con
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
-| POST  | https://eft.evertecinc.co:5002/deposit/refund/reverese    |          [ Si ]        |
+| POST  | https://eft.evertecinc.co:5002/deposit/refund/reverse    |          [ Si ]        |
 
 ## Datos de la solicitud (body)
 
