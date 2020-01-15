@@ -4,10 +4,7 @@ Procesa una solicitud financiera de reveso de una anulación de un depósito con
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
-| POST  | https://[server-ip]:[port]/deposit/refund/reverese    |          [ Si ]        |
-
-server-ip: Dirección IP del servidor de aplicación.  
-port: Número de puerto de aplicación. 
+| POST  | https://eft.evertecinc.co:5002/deposit/refund/reverese    |          [ Si ]        |
 
 ## Datos de la solicitud (body)
 
