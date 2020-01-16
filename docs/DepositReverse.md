@@ -4,7 +4,10 @@ Procesa una solicitud financiera de reverso de un depósito con activación de u
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
-| POST  | https://eft.evertecinc.co:5002/deposit/reverse           |          [ Si ]        |
+| POST  | https://[host]:[port]/deposit/reverse           |          [ Si ]        |
+
+host: Nombre de dominio o dirección IP del servicio de transacciones.  
+port: Número del puerto del servicio de transacciones.
 
 ## Datos de la solicitud (body)
 
