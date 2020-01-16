@@ -4,7 +4,10 @@ Procesa una solicitud financiera de depósito con activación de una tarjeta.
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
-| POST  | https://eft.evertecinc.co:5002/deposit            |          [ Si ]        |
+| POST  | https://[host]:[port]/deposit            |          [ Si ]        |
+
+host: Nombre de dominio o dirección IP del servicio de transacciones.  
+port: Número del puerto del servicio de transacciones.
 
 ## Datos de la solicitud (body)
 
