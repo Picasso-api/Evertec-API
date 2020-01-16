@@ -4,7 +4,10 @@ Procesa una solicitud financiera de anulación de un depósito con activación d
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
-| POST  | https://eft.evertecinc.co:5002/deposit/refund     |          [ Si ]        |
+| POST  | https://[host]:[port]/deposit/refund     |          [ Si ]        |
+
+host: Nombre de dominio o dirección IP del servicio de transacciones.  
+port: Número del puerto del servicio de transacciones.
 
 ## Datos de la solicitud (body)
 
