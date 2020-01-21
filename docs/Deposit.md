@@ -53,6 +53,7 @@ Cuando el estatus de la operación es 200 (exitoso), el cuerpo de la respuesta i
 
 ```json
 {
+  "RetrievalRefNo": "999999999999",
   "AuthNumber": "999999"
 }
 ```
