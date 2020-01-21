@@ -20,8 +20,8 @@ port: Número del puerto del servicio de transacciones.
   "TerminalId": "99999999",
   "CardAcceptorName": "XXXXXXXXXXXXXX",
   "TransactionId": "110ea879-9442-40c5-a370-fea35085d67a",
-  "AuthNumber": "999999999999",
-  "Pan": "h0rgmuOnbrdcYK7lrEGU+oFTEZVA16zEwLXUatIg5fwGdq6/N+ap/Oz8qg1PHFzsRc77MUCKkXUI+BwROe/wc62tScDrGlxIDvG1jIZApNNAOdPAoif/qctwLLniSJCCThhm11nVXOdzPEQtOprvWki7mRri1Xt8ZfrdkCeCBPs6nx3I6zfzjFa3+FR4p+ZcqB1CgFwXPp8Glandb+0OtYMCevwFDB3SfEPI3Q3/v0t39KYLHYnq4m8EY4PbPgCVC0LLcU2v2KxCjcOWMemGrGP6fX33I6kdHTyhS3bSNONBG80oRxH39/qfcyzQHJ3a4Ym/H6kcXB7Q+XPiAjwiCw=="
+  "Pan": "h0rgmuOnbrdcYK7lrEGU+oFTEZVA16zEwLXUatIg5fwGdq6/N+ap/Oz8qg1PHFzsRc77MUCKkXUI+BwROe/wc62tScDrGlxIDvG1jIZApNNAOdPAoif/qctwLLniSJCCThhm11nVXOdzPEQtOprvWki7mRri1Xt8ZfrdkCeCBPs6nx3I6zfzjFa3+FR4p+ZcqB1CgFwXPp8Glandb+0OtYMCevwFDB3SfEPI3Q3/v0t39KYLHYnq4m8EY4PbPgCVC0LLcU2v2KxCjcOWMemGrGP6fX33I6kdHTyhS3bSNONBG80oRxH39/qfcyzQHJ3a4Ym/H6kcXB7Q+XPiAjwiCw==",
+  "RetrievalRefNo": "173726000030"
 }
 ```
 
@@ -36,8 +36,8 @@ CardAcceptor | string | Código del álmacen desde el cual se realiza la activac
 TerminalId | string | Identificador de la terminal desde la cual se realiza la operación de la activación de la tarjeta. Campo numérico de 8 dígitos. | [ Si ]
 CardAcceptorName | string | Nombre del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
 TransactionId | string |Identificador de la transacción enviada.| [Si]
-AuthNumber | string | Número de autorización generado por el sistema para la transacción original de depósito. | [ Si ]
 Pan | string | Número de la tarjeta que se va a activar. Se debe enviar com una cadena cifrada con certificado de confianza. | [ Si ]
+RetrievalRefNo | string | Número de referencia de la transacción de depósito con activación. El valor de este campo proviene de la respuesta de la transacción de depósito con activación original en el campo "RetrievalRefNo". | [ Si ]
 
 ## Datos de la respuesta
 Esta operación no retorna información adicional al código de estado de HTTP de acuerdo con la especificación RFC 2616. Si la respuesta no es `HttpStatus` 200, en el campo `Reason` de la respuesta encontrará un mensaje que describe de forma detallada el resultado de la operación.
@@ -55,6 +55,7 @@ Cuando el estatus de la operación es 200 (exitoso), el cuerpo de la respuesta i
 
 ```json
 {
+  "RetrievalRefNo": "999999999999",
   "AuthNumber": "999999"
 }
 ```
