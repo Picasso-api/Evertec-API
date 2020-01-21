@@ -34,7 +34,7 @@ AcquirerId | string | Identificador del adquiriente que realiza la activación d
 CardAcceptor | string | Código del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
 CardAcceptorName | string | Nombre del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
 TerminalId | string | Identificador de la terminal desde la cual se realiza la operación de la activación de la tarjeta. Dato numérico de 8 dígitos. | [ Si ]
-TransactionId | string |Identificador único de la transacción. El valor de este campo es igual al valor del campo "TransactionId" de la transacción original de depósito con activación. | [Si]
+TransactionId | string |Identificador único de la transacción. OBLIGATORIO: El valor de este campo es igual al valor del campo "TransactionId" de la transacción original de depósito con activación. | [Si]
 Pan | string | Número de la tarjeta que se va a activar. Se debe enviar com una cadena cifrada con certificado de confianza. | [ Si ]
 
 ## Datos de la respuesta
