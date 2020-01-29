@@ -1,9 +1,14 @@
-site_name: Picasso Auth
+site_name: API Evertec Colombia
 nav:
-    - Home: index.md
+    - Introducción: index.md
+    - Concepto importantes: Overview.md
+        - Registro de aplicaciones: App_Register.md
+        - Asegurar una clave API: Securing_AppKey.md
     - Identificación de aplicaciones: App_setup.md
     - Pasos para crear un JWT: JWT_build.md
     - Solicitar un token de autenticación: JWT_request.md
+    - Generar un token de autenticación: Generate-Token.md
+    - Enviar un token de autenticación: Send-Token.md
     - Depósito con activación: Deposit.md
     - Anulación de un depósito: DepositRefund.md
     - Reversos:
