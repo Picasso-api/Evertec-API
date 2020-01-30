@@ -24,7 +24,8 @@ La información de petición de la transacción se compone de los siguientes val
 
 ### Valores de respuesta
 
-La información de respuesta incluye los siguientes valores:  
+La información de respuesta incluye los siguientes valores:
+
 * Código de la respuesta. Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada.
 * Mensaje de respuesta. Descripción del resultado de la ejecución de la transacción.
 * Número de autorización de la transacción.
