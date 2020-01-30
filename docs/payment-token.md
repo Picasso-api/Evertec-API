@@ -11,7 +11,9 @@ Procesa una solicitud financiera de compra utilizando un token transaccional com
 
 ## Valores de la solicitud
 
-La información de petición de la transacción se compone de los siguientes valores:  
+La información de petición de la transacción se compone de los siguientes valores:
+
+* Identificación unívoco de la transacción. Incluye el código único de la transacción de compra con token.
 * Identificador del adquiriente que realiza la activación de la tarjeta. Incluye los identificadores del almacén y la terminal de origen.
 * Identificador de la cuenta o tarjeta que origina la transacción.
 * Token de pago, obtenido mediante transacción de generación de token de pago. Generalmente le será entregado en un mensaje SMS.
