@@ -14,7 +14,7 @@ Procesa una solicitud financiera de depósito con activación de una tarjeta. Co
 La información de petición de la transacción se compone de los siguientes valores:
 
 * Identificación unívoco de la transacción. Incluye el código único de la transacción de depósito con activación.
-* Identificador del adquiriente que realiza la activación de la tarjeta. Generalmente podría incluir los identificadores del almacén y la terminal de origen.
+* Identificador del adquiriente que realiza la activación de la tarjeta. Incluye los identificadores del almacén y la terminal de origen.
 * Identificador de la tarjeta que origina la transacción.
 * Tipo de cuenta o bolsillo al que serán acreditados los fondos de la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
 * Valor de la transacción o valor a acreditar.
