@@ -16,7 +16,7 @@ nav:
         - Generación de token de pagos (Generalidades): generate-payment-token-info.md
         - Generación de token de pagos: generate-payment-token.md        
         - Recaudo en línea: collect.md
-        - Retiro con token (Avance): withdrawal-token.md
+        - Retiro o avance con token: withdrawal-token.md
     - Anulaciones:
         - Anulación de una transacción: refund.md
     - Reversos:
