@@ -11,8 +11,9 @@ Procesa una solicitud financiera de depósito con activación de una tarjeta. Co
 
 ## Valores de la solicitud
 
-La información de petición de la transacción se compone de los siguientes valores:  
-- Identificación unívoco de la transacción. Generalmente se deberá incluir el código único de la transacción de depósito con activación.
+La información de petición de la transacción se compone de los siguientes valores:
+
+- Identificación unívoco de la transacción. Incluye el código único de la transacción de depósito con activación.
 - Identificador del adquiriente que realiza la activación de la tarjeta. Generalmente podría incluir los identificadores del almacén y la terminal de origen.
 - Identificador de la tarjeta que origina la transacción.
 - Tipo de cuenta o bolsillo al que serán acreditados los fondos de la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
@@ -22,7 +23,8 @@ La información de petición de la transacción se compone de los siguientes val
 
 ### Valores de respuesta
 
-La información de respuesta incluye los siguientes valores:  
+La información de respuesta incluye los siguientes valores:
+
 - Código de la respuesta. Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada. 
 - Mensaje de respuesta. Descripción del resultado de la ejecución de la transacción.
 - Número de autorización de la transacción.
