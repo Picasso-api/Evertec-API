@@ -17,10 +17,7 @@ nav:
         - Recaudo en línea: collect.md
         - Retiro con token (Avance): withdrawal-token.md
     - Anulaciones:
-        - Anulación de compra con token: payment-token-refund.md
-        - Anulación de depósito con activación: DepositRefund.md
-        - Anulación de recaudo en línea: collect-refund.md
-        - Anulación de retiro con token (Avance): withdrawal-token-refund.md
+        - Anulación de una transacción: refund.md
     - Reversos:
         - Reverso de anulación de compra con token: payment-token-refund-reverse.md
         - Reverso de anulación de depósito con activación: DepositRefundReverse.md
