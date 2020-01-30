@@ -12,7 +12,7 @@ Procesa una solicitud financiera de compra utilizando un token transaccional com
 ## Valores de la solicitud
 
 La información de petición de la transacción se compone de los siguientes valores:  
-- Identificador del adquiriente que realiza la activación de la tarjeta. Generalmente incluye los identificadores del almacén y la terminal de origen.
+- Identificador del adquiriente que realiza la activación de la tarjeta. Incluye los identificadores del almacén y la terminal de origen.
 - Identificador de la cuenta o tarjeta que origina la transacción.
 - Token de pago, obtenido mediante transacción de generación de token de pago. Generalmente le será entregado en un mensaje SMS.
 - Tipo de cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
