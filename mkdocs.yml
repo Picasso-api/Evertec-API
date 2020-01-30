@@ -9,9 +9,23 @@ nav:
     - Solicitar un token de autenticación: JWT_request.md
     - Generar un token de autenticación: Generate-Token.md
     - Enviar un token de autenticación: Send-Token.md
-    - Depósito con activación: Deposit.md
-    - Anulación de un depósito: DepositRefund.md
+    - Transacciones:
+        - Compra con token: payment-token.md
+        - Depósito con activación: Deposit.md
+        - Generar token de compra: generate-payment-token.md
+        - Recaudo en línea: collect.md
+        - Retiro con token (Avance): withdrawal-token.md
+    - Anulaciones:
+        - Anulación de compra con token: payment-token-refund.md
+        - Anulación de depósito con activación: DepositRefund.md
+        - Anulación de recaudo en línea: collect-refund.md
+        - Anulación de retiro con token (Avance): withdrawal-token-refund.md
     - Reversos:
-       - De depósito con activación: DepositReverse.md
-       - De anulación: DepositRefundReverse.md
+        - Reverso de anulación de compra con token: payment-token-refund-reverse.md
+        - Reverso de anulación de depósito con activación: DepositRefundReverse.md
+        - Reverso de anulación de recaudo en línea: collect-refund-reverse.md
+        - Reverso de anulación de retiro con token (Avance): withdrawal-token-refund-reverse.md
+        - Reverso de compra con token: payment-token-reverse.md
+        - Reverso de depósito con activación: DepositReverse.md
+        - Reverso de retiro con token (Avance): withdrawal-token-reverse.md
 theme: readthedocs
