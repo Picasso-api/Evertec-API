@@ -35,6 +35,6 @@ Esta operación retorna el código de estado de HTTP de acuerdo con la especific
 
 HttpStatus | Tipo | Descripción
 :---: | :--------: | ------------
-200 | int | El token de pago se validó satisfactoriamente y se realizó el descuento de los fondos monetarios en la cuenta del usuario. 
+200 | int | Se envío correctamente el mensaje de solicitud de transacción al API Evertec y se obtuvo un mensaje de respuesta por parte del servicio. El resultado de la transacción deberá ser validado según el código y el mensaje incluidos en el mensaje de respuesta.
 401 | int | La solicitud requiere autenticación de usuario. Debe repetir la solicitud con un campo de encabezado de autorización adecuado con las credenciales de autorización otorgadas.
 500 | int | Se produjo un error interno en el servicio del API Evertec. 
