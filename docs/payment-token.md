@@ -6,7 +6,7 @@ Procesa una solicitud financiera de compra utilizando un token transaccional com
 | :---: | --------------------------------------------- | :--------------------: |
 | POST  | https://[host]:[port]/financial |          [ Si ]           |
 
-*host*: Nombre de dominio o dirección IP del servicio de transacciones.
+*host*: Nombre de dominio o dirección IP del servicio de transacciones.  
 *port*: Número del puerto del servicio de transacciones.
 
 ## Valores de la solicitud
