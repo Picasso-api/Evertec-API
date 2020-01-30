@@ -12,20 +12,20 @@ Procesa una solicitud financiera de compra utilizando un token transaccional com
 ## Valores de la solicitud
 
 La información de petición de la transacción se compone de los siguientes valores:  
-- Identificador del adquiriente que realiza la activación de la tarjeta. Incluye los identificadores del almacén y la terminal de origen.
-- Identificador de la cuenta o tarjeta que origina la transacción.
-- Token de pago, obtenido mediante transacción de generación de token de pago. Generalmente le será entregado en un mensaje SMS.
-- Tipo de cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
-- Valor de la transacción o valor de la compra.
+* Identificador del adquiriente que realiza la activación de la tarjeta. Incluye los identificadores del almacén y la terminal de origen.
+* Identificador de la cuenta o tarjeta que origina la transacción.
+* Token de pago, obtenido mediante transacción de generación de token de pago. Generalmente le será entregado en un mensaje SMS.
+* Tipo de cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
+* Valor de la transacción o valor de la compra.
 
 >Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
 ### Valores de respuesta
 
 La información de respuesta incluye los siguientes valores:  
-- Código de la respuesta. Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada.
-- Mensaje de respuesta. Descripción del resultado de la ejecución de la transacción.
-- Número de autorización de la transacción.
+* Código de la respuesta. Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada.
+* Mensaje de respuesta. Descripción del resultado de la ejecución de la transacción.
+* Número de autorización de la transacción.
 
 >Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
