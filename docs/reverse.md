@@ -17,7 +17,7 @@ La información de petición de la transacción se compone de los siguientes val
 * Identificador de la transacción que se intenta reversar. Corresponde a la identificacióne de la solicitud en la transacción original.
 * Identificador del adquiriente que origina la transacción. Incluye los identificadores del almacén y la terminal de origen.
 * Identificador de la cuenta o tarjeta que origina la transacción.
-* Tipo de cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
+* Tipo de cuenta o bolsillo de la transacción original. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
 * Valor de la transacción original.
 
 >Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
