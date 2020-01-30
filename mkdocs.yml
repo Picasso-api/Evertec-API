@@ -2,6 +2,7 @@ site_name: API Evertec Colombia
 nav:
     - Introducción: index.md
     - Concepto importantes: Overview.md
+    - Conectar con la API: 
         - Registro de aplicaciones: App_Register.md
         - Asegurar una clave API: Securing_AppKey.md
     - Identificación de aplicaciones: App_setup.md
