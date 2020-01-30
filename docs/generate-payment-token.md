@@ -15,7 +15,6 @@ La información de petición de la transacción se compone de los siguientes val
 
 * Identificación unívoco de la transacción. Incluye el código único de la transacción de generación de token.
 * Identificador del adquiriente que realiza la activación de la tarjeta. Incluye los identificadores del almacén y la terminal de origen.
-* Identificador de la cuenta o tarjeta que origina la transacción.
 
 >Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
