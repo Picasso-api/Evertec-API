@@ -4,7 +4,10 @@ Procesa una solicitud financiera de compra utilizando un token transaccional com
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
-| POST  | https://localhost/financial |          [ Si ]           |
+| POST  | https://[host]:[port]/financial |          [ Si ]           |
+
+*host*: Nombre de dominio o dirección IP del servicio de transacciones.
+*port*: Número del puerto del servicio de transacciones.
 
 ## Valores de la solicitud
 
@@ -18,10 +21,12 @@ La información de petición de la transacción se compone de los siguientes val
 
 ### Valores de respuesta
 
-El cuerpo de la respuesta incluye los siguientes datos:  
+La información de respuesta incluye los siguientes valores:  
 - Código de la respuesta. Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada.
 - Mensaje de respuesta. Descripción del resultado de la ejecución de la transacción.
 - Número de autorización de la transacción.
+
+>Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
 ## Estado de solicitud
 
