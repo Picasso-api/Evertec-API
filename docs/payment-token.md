@@ -8,17 +8,17 @@ Procesa una solicitud financiera de compra utilizando un token transaccional com
 
 ## Valores de la solicitud
 
-La información de petición de la transacción se compone de los siguientes valores:
-- Identificador de la cuenta o tarjeta que origina la transqacción.
+La información de petición de la transacción se compone de los siguientes valores:  
+- Identificador de la cuenta o tarjeta que origina la transacción.
 - Token de pago, obtenido mediante transacción de generación de token de pago. Generalmente le será entregado en un mensaje SMS.
-- Tipo de cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe "*ingresar/seleccionar/establecer*" el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
-- Valor de la transacción (compra). Cantidad de dinero que se desea autorizar.
+- Tipo de cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
+- Valor de la transacción o valor de la compra.
 
->Nota: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
+>Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
 ### Valores de respuesta
 
-El cuerpo de la respuesta incluye los siguientes datos:
+El cuerpo de la respuesta incluye los siguientes datos:  
 - Código de la respuesta. Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada.
 - Mensaje de respuesta. Descripción del resultado de la ejecución de la transacción.
 - Número de autorización de la transacción.
