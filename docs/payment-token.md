@@ -1,27 +1,27 @@
 # Compra con token
 
-Procesa una solicitud financiera de compra(compra), utilizando un token transaccional como método de validación. Esta transacción permite realizar un pago a partir de los saldos de las cuentas o bolsillos que tenga asociadas la tarjeta, es decir, del pago total puedo destinar cierto monto de cada una de las cuentas para cubrir la obligación.
+Procesa una solicitud financiera de compra utilizando un token transaccional como método de validación. Esta transacción permite realizar un pago a partir de los saldos de las cuentas o bolsillos que tenga asociadas la tarjeta, es decir, del pago total permite destinar cierto monto de la cuenta para cubrir la obligación.
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
-| POST  | http://localhost/financial |          [ Si ]           |
+| POST  | https://localhost/financial |          [ Si ]           |
 
 ## Valores de la solicitud
 
 La información de petición de la transacción se compone de los siguientes valores:
-	- Identificador de la cuenta o tarjeta que origina la transqacción.
-	- Token de pago, obtenido mediante transacción de generación de token de pago. Generalmente le será entregado en un mensaje SMS.
-	- Tipo de cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe "*ingresar/seleccionar/establecer*" el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
-	- Valor de la transacción (compra). Cantidad de dinero que se desea autorizar.
+- Identificador de la cuenta o tarjeta que origina la transqacción.
+- Token de pago, obtenido mediante transacción de generación de token de pago. Generalmente le será entregado en un mensaje SMS.
+- Tipo de cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe "*ingresar/seleccionar/establecer*" el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
+- Valor de la transacción (compra). Cantidad de dinero que se desea autorizar.
 
 >Nota: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
 ### Valores de respuesta
 
 El cuerpo de la respuesta incluye los siguientes datos:
-	- Código de la respuesta. Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada.
-	- Mensaje de respuesta. Descripción del resultado de la ejecución de la transacción.
-	- Número de autorización de la transacción.
+- Código de la respuesta. Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada.
+- Mensaje de respuesta. Descripción del resultado de la ejecución de la transacción.
+- Número de autorización de la transacción.
 
 ## Estado de solicitud
 
