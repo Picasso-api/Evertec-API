@@ -1,6 +1,6 @@
 # Anulación de una transacción
 
-Procesa la solicitud de anulación de una transacción financiera.
+Procesa la solicitud de anulación de una transacción financiera procesada previamente.
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
