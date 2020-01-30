@@ -1,6 +1,6 @@
 # Compra con token
 
-Procesa una solicitud financiera de compra utilizando un token transaccional como método de validación. Esta transacción permite realizar un pago a partir de los saldos de las cuentas o bolsillos que tenga asociadas la tarjeta, es decir, del pago total permite destinar cierto monto de la cuenta para cubrir la obligación.
+Procesa una solicitud financiera de compra utilizando un token transaccional como método de validación. Esta transacción permite realizar un pago a partir de los saldos de las cuentas o bolsillos que tenga asociadas la tarjeta, es decir, el pago total será debitado de la cuenta indicada para cubrir la obligación.
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
