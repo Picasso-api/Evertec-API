@@ -12,6 +12,7 @@ nav:
     - Enviar un token de autenticación: Send-Token.md
     - Transacciones:
         - Compra con token: payment-token.md
+        - Consulta de recaudo en línea: collect-inquiry.md
         - Depósito con activación: Deposit.md
         - Generación de token de pagos (Generalidades): generate-payment-token-info.md
         - Generación de token de pagos: generate-payment-token.md        

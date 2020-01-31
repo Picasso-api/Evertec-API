@@ -1,6 +1,6 @@
 # Depósito con activación
 
-Procesa una solicitud financiera depósito con activación de una tarjeta. Como prerrequisito, la tarjeta deberá encontrarse inactiva y sin saldo a favor en el bolsillo destino.
+Procesa una solicitud financiera depósito con activación de una tarjeta. Como prerrequisito, la tarjeta deberá encontrarse inactiva y sin saldo a favor en el bolsillo de destino.
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
@@ -16,7 +16,7 @@ La información de petición de la transacción se compone de los siguientes val
 | Valor | Descripción                                      |
 | :---: | --------------------------------------------- |
 Número de serie | Identificador único asignado por el cliente a cada transacción.
-Código de transacción | Código de transacción depósito con activación predefinido por el API Evertec.
+Código de transacción | Código de transacción de depósito con activación predefinido por el API Evertec.
 Identificador de adquiriente | Adquiriente que realiza la activación de la tarjeta. Generalmente incluye los identificadores del almacén y de la terminal de origen.
 Número de tarjeta | Tarjeta que origina la transacción.
 Tipo de cuenta | Cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.

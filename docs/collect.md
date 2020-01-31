@@ -1,6 +1,6 @@
-# Reverso de una transacción
+# Recaudo en línea
 
-Procesa la solicitud de reverso de una transacción financiera procesada previamente.
+Procesa una solicitud financiera de recaudo en línea.
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
@@ -9,23 +9,19 @@ Procesa la solicitud de reverso de una transacción financiera procesada previam
 *host*: Nombre de dominio o dirección IP del servicio de transacciones.  
 *port*: Número del puerto del servicio de transacciones.
 
-### Valores de la solicitud
+## Valores de la solicitud
 
 La información de petición de la transacción se compone de los siguientes valores:
 
 | Valor | Descripción                                      |
 | :---: | --------------------------------------------- |
-Número de serie original | Identificador de la transacción que se intenta reversar. Corresponde a la identificación de la solicitud en la transacción original.
-Código de transacción | Código de transacción de reverso predefinido por el API Evertec.
+Número de serie | Identificador único asignado por el cliente a cada transacción.
+Código de transacción | Código de transacción de recaudo en línea predefinido por el API Evertec.
 Identificador de adquiriente | Adquiriente que realiza la activación de la tarjeta. Generalmente incluye los identificadores del almacén y de la terminal de origen.
-Número de tarjeta | Tarjeta que origina la transacción.
-Tipo de cuenta | Tipo de cuenta o bolsillo de la transacción original. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
-Monto | Valor de la transacción original.
-Número de Autorización de origen | Identificador del número de autorización generado para la transacción original.
+Tipo de cuenta | Cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
+Monto | Valor de la transacción.
 
 >Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
-
-> Transacción original: Transacción que se intenta anular.
 
 ### Valores de respuesta
 
@@ -39,13 +35,13 @@ Número de autorización | Si la transacción fue exitosa, corresponde al númer
 
 >Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
-## Estado de solicitud
+## Estado de HTTP
 
 Esta operación retorna el código de estado de HTTP de acuerdo con la especificación [RFC 2616](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html). Si la respuesta no es `HttpStatus` 200, en la información respuesta encontrará un mensaje que describe de forma detallada el resultado de la operación.
 
 HttpStatus | Tipo | Descripción
 :---: | :--------: | ------------
-200 | int | Se envió correctamente el mensaje de solicitud de transacción al API Evertec y se obtuvo un mensaje de respuesta por parte del servicio. El resultado de la transacción deberá ser validado según el código y el mensaje incluidos en el mensaje de respuesta.
+200 | int | Se envío correctamente el mensaje de solicitud de transacción al API Evertec y se obtuvo un mensaje de respuesta por parte del servicio. El resultado de la transacción deberá ser validado según el código y el mensaje incluidos en el mensaje de respuesta.
 401 | int | La solicitud requiere autenticación de usuario. Debe repetir la solicitud con un campo de encabezado de autorización adecuado con las credenciales de autorización otorgadas.
 500 | int | Se produjo un error interno en el servicio del API Evertec. 
 

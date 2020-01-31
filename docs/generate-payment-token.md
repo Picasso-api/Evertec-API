@@ -16,7 +16,7 @@ La información de petición de la transacción se compone de los siguientes val
 | Valor | Descripción                                      |
 | :---: | --------------------------------------------- |
 Número de serie | Identificador único asignado por el cliente a cada transacción.
-Código de transacción | Código de transacción depósito con activación predefinido por el API Evertec.
+Código de transacción | Código de transacción de generación de token de pagos predefinido por el API Evertec.
 Identificador de adquiriente | Adquiriente que realiza la activación de la tarjeta. Generalmente incluye los identificadores del almacén y de la terminal de origen.
 
 >Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
