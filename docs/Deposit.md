@@ -1,6 +1,6 @@
 # Depósito con activación
 
-Procesa una solicitud financiera de depósito con activación de una tarjeta. Como prerequisito, la tarjeta deberá encontrarse inactiva y sin saldo a favor en el bolsillo de destino.
+Procesa una solicitud financiera depósito con activación de una tarjeta. Como prerrequisito, la tarjeta deberá encontrarse inactiva y sin saldo a favor en el bolsillo destino.
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
@@ -13,11 +13,14 @@ Procesa una solicitud financiera de depósito con activación de una tarjeta. Co
 
 La información de petición de la transacción se compone de los siguientes valores:
 
-* Identificación unívoco de la transacción. Incluye el código único de la transacción de depósito con activación.
-* Identificador del adquiriente que realiza la activación de la tarjeta. Incluye los identificadores del almacén y la terminal de origen.
-* Identificador de la tarjeta que origina la transacción.
-* Tipo de cuenta o bolsillo al que serán acreditados los fondos de la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
-* Valor de la transacción o valor a acreditar.
+| Valor | Descripción                                      |
+| :---: | --------------------------------------------- |
+Número de serie | Identificador único asignado por el cliente a cada transacción.
+Código de transacción | Código de transacción depósito con activación predefinido por el API Evertec.
+Identificador de adquiriente | Adquiriente que realiza la activación de la tarjeta. Generalmente incluye los identificadores del almacén y de la terminal de origen.
+Número de tarjeta | Tarjeta que origina la transacción.
+Tipo de cuenta | Cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
+Monto | Valor de la transacción.
 
 >Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
@@ -25,9 +28,11 @@ La información de petición de la transacción se compone de los siguientes val
 
 La información de respuesta incluye los siguientes valores:
 
-* Código de la respuesta. Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada. 
-* Mensaje de respuesta. Descripción del resultado de la ejecución de la transacción.
-* Número de autorización de la transacción.
+| Valor | Descripción                                      |
+| :---: | --------------------------------------------- |
+Código de respuesta | Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada. El mensaje de respuesta indicará el motivo de declinación.
+Mensaje de respuesta | Descripción del resultado de la ejecución de la transacción correspondiente al código de respuesta.
+Número de autorización | Si la transacción fue exitosa, corresponde al número de validación de la transacción retornado por el API Evertec.
 
 >Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
@@ -40,3 +45,5 @@ HttpStatus | Tipo | Descripción
 200 | int | Se envío correctamente el mensaje de solicitud de transacción al API Evertec y se obtuvo un mensaje de respuesta por parte del servicio. El resultado de la transacción deberá ser validado según el código y el mensaje incluidos en el mensaje de respuesta.
 401 | int | La solicitud requiere autenticación de usuario. Debe repetir la solicitud con un campo de encabezado de autorización adecuado con las credenciales de autorización otorgadas.
 500 | int | Se produjo un error interno en el servicio del API Evertec. 
+
+## Información relacionada
