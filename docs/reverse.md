@@ -15,7 +15,7 @@ La información de petición de la transacción se compone de los siguientes val
 
 | Valor | Descripción                                      |
 | :---: | --------------------------------------------- |
-Número de serie original | Identificador de la transacción que se intenta reversar. Corresponde a la identificación de la solicitud en la transacción original.
+Consecutivo de transacción original | Identificador de la transacción que se intenta reversar. Corresponde a la identificación de la solicitud en la transacción original.
 Código de transacción | Código de transacción de reverso predefinido por el API Evertec.
 Identificador de adquiriente | Adquiriente que realiza la activación de la tarjeta. Generalmente incluye los identificadores del almacén y de la terminal de origen.
 Número de tarjeta | Tarjeta que origina la transacción.

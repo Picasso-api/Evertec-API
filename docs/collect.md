@@ -15,7 +15,7 @@ La información de petición de la transacción se compone de los siguientes val
 
 | Valor | Descripción                                      |
 | :---: | --------------------------------------------- |
-Número de serie | Identificador único asignado por el cliente a cada transacción.
+Consecutivo de transacción | Identificador único asignado por el cliente a cada transacción.
 Código de transacción | Código de transacción de recaudo en línea predefinido por el API Evertec.
 Identificador de adquiriente | Adquiriente que realiza la activación de la tarjeta. Generalmente incluye los identificadores del almacén y de la terminal de origen.
 Tipo de cuenta | Cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
