@@ -126,12 +126,12 @@ Identificador tipo de cuenta | Identificador del tipo de cuenta que afectó el m
 Nombre tipo de cuenta | Nombre del tipo de cuenta que afectó el movimiento/transacción.
 Monto | Valor por el que se realizó el movimiento/transacción.
 Comercio | Nombre del comercio donde se realizó el movimiento/transacción.
-Naturaleza contable | Define la naturaleza contable de la transacción financiera. **[Tipos de categoria](product-inquiry.md#categories)**
+Categoría | Define la naturaleza contable de la transacción financiera. **[Tipos de categoría](product-inquiry.md#categories)**
 Fecha | Fecha y hora en que se realizó el movimiento/transacción.
 Nombre movimiento | Nombre que representa el tipo de movimiento/transacción.
-Código tipo de movimiento | Código que representa el tipo de movimiento/transacción.
+Código movimiento | Código que representa el tipo de movimiento/transacción.
 
-#### Tipos de categoria
+#### Tipos de categoría
 
 <div id="categories"></div>
 
@@ -157,5 +157,4 @@ PAS | Pasaporte
 CL | Celular
 
 ## Información relacionada
-
 
