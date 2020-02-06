@@ -17,24 +17,24 @@ Obtiene la información resumida de las cuentas o productos asociados a un afilia
 
 ### Valores de la solicitud
 
-Campo | Tipo de dato | Descripción | Requerido
-:---: | :----------: | ----------- | :-------:
-Tipo de documento | `string` | Tipo de documento del afiliado. Cualquier valor de la columna **Acrónimo** en el dominio de los [Tipos de documento](product-inquiry.md#docType). Valor esperado en la URL sin corchetes. | [x]
-Número de documento | `string` | Número de documento del afiliado. Valor esperado en la URL sin corchetes. | [x]
+Campo | Descripción | Requerido
+:---: | ----------- | :-------:
+Tipo de documento | Tipo de documento del afiliado. Cualquier valor de la columna **Acrónimo** en el dominio de los [Tipos de documento](product-inquiry.md#docType). Valor esperado en la URL sin corchetes. | [x]
+Número de documento | Número de documento del afiliado. Valor esperado en la URL sin corchetes. | [x]
 
 
 ### Valores de la respuesta
 
-Campo | Tipo de dato | Descripción
-:---: | :----------: | -----------
-Identificador | `string` | Identificador unívoco de la cuenta.
-Saldo | `decimal` | Valor del saldo actual de la cuenta.
-Número de cuenta | `string` | Número enmascarado de la cuenta.
-Orden | `int` | Orden del elemento para visualizar en interfaz de usuario.
-Producto | `string` | Nombre asignado al producto.
-Propiedades | `list` | Es un conjunto de propiedades o atributos que representan información adicional de la cuenta. [Propiedades de una cuenta](product-inquiry.md#accountProperties)
-Origen | `int` | Define los sistemas reconocidos desde donde se originaron los datos de la cuenta. [Tipos de sistemas](product-inquiry.md#subsystems)
-Identificador de cuenta origen | `string` | Identificador de la cuenta que se utilizará en procesos transaccionales
+Campo | Descripción
+:---: | -----------
+Identificador | Identificador unívoco de la cuenta.
+Saldo | Valor del saldo actual de la cuenta.
+Número de cuenta | Número enmascarado de la cuenta.
+Orden | Orden del elemento para visualizar en interfaz de usuario.
+Producto | Nombre asignado al producto.
+Propiedades | Es un conjunto de propiedades o atributos que representan información adicional de la cuenta. [Propiedades de una cuenta](product-inquiry.md#accountProperties)
+Origen | Define los sistemas reconocidos desde donde se originaron los datos de la cuenta. [Tipos de sistemas](product-inquiry.md#subsystems)
+Identificador de cuenta origen | Identificador de la cuenta que se utilizará en procesos transaccionales
 
 #### Propiedades de una cuenta
 
@@ -42,11 +42,11 @@ Identificador de cuenta origen | `string` | Identificador de la cuenta que se ut
 
 Las propiedades representan información resumida por alguna característica de la cuenta.
 
-Campo | Tipo de dato | Descripción
-:---: | :----------: | -----------
-Nombre de atributo | `string` | Nombre o etiqueta para visualizar el contenido del atributo en interfaz de usuario.
-Identificador de atributo | `string` | Identificador interno del atributo.
-Valor | `string` | Valor asociado con el atributo.
+Campo | Descripción
+:---: | -----------
+Nombre de atributo | Nombre o etiqueta para visualizar el contenido del atributo en interfaz de usuario.
+Identificador de atributo | Identificador interno del atributo.
+Valor | Valor asociado con el atributo.
 
 <div class="admonition warning">
    <p class="first admonition-title">Atención</p>
@@ -59,9 +59,9 @@ Valor | `string` | Valor asociado con el atributo.
 
 Valor | Nombre | Descripción
 :---: | :----: | -----------
-`0` | Tup | El origen de la información es el sistema de administración de tarjetas débito **TUP**.
-`1` | Bancor | El origen de la información es sistema de administración de cartera **BANCOR**.
-`2` | Ninguno | No hay un sistema definido. La información se puede utilizar con la finalidad de comprobar el funcionamiento del servicio, mientras se finalizan los acuerdos comerciales que permitan a los afiliados del API, consumir la información real de los sistemas transaccionales. 
+0 | Tup | El origen de la información es el sistema de administración de tarjetas débito **TUP**.
+1 | Bancor | El origen de la información es sistema de administración de cartera **BANCOR**.
+2 | Ninguno | No hay un sistema definido. La información se puede utilizar con la finalidad de comprobar el funcionamiento del servicio, mientras se finalizan los acuerdos comerciales que permitan a los afiliados del API, consumir la información real de los sistemas transaccionales. 
 
 ## Consultar saldos de una cuenta
 
@@ -78,22 +78,22 @@ Obtiene los saldos (balances) detallados de una cuenta débito.
 
 ### Valores de la solicitud
 
-Campo | Tipo de dato | Descripción | Requerido
-:---: | :----------: | ----------- | :-------:
-Tipo de documento | `string` | Tipo de documento del afiliado. Cualquier valor de la columna **Acrónimo** en el dominio de los **[Tipos de documento](product-inquiry.md#docType)**. Valor esperado en la URL sin corchetes. | [x]
-Número de documento | `string` | Número de documento del afiliado. Valor esperado en la URL sin corchetes. | [x]
-Identificador de cuenta | `string` | Identificador de la cuenta para la que se obtienen los saldos (Corresponde con el valor del atributo `Identificador` de la respuesta de la consulta de cuentas). Valor esperado en la URL sin corchetes. | [x]
+Campo | Descripción | Requerido
+:---: | ----------- | :-------:
+Tipo de documento | Tipo de documento del afiliado. Cualquier valor de la columna **Acrónimo** en el dominio de los **[Tipos de documento](product-inquiry.md#docType)**. Valor esperado en la URL sin corchetes. | [x]
+Número de documento | Número de documento del afiliado. Valor esperado en la URL sin corchetes. | [x]
+Identificador de cuenta | Identificador de la cuenta para la que se obtienen los saldos (Corresponde con el valor del atributo `Identificador` de la respuesta de la consulta de cuentas). Valor esperado en la URL sin corchetes. | [x]
 
 
 ### Valores de la respuesta
 
-Campo | Tipo de dato | Descripción
-:---: | :----------: | -----------
-Saldo | `decimal` | Valor del saldo actual de la cuenta.
-Número de cuenta | `string` | Número enmascarado de la cuenta.
-Identificador de cuenta origen | `string` | Identificador de la cuenta que se utilizará en procesos transaccionales.
-Identificador tipo de cuenta | `string` | Identificador del tipo de cuenta.
-Nombre tipo de cuenta | `string` | Nombre del tipo de cuenta.
+Campo | Descripción
+:---: | -----------
+Saldo | Valor del saldo actual de la cuenta.
+Número de cuenta | Número enmascarado de la cuenta.
+Identificador de cuenta origen | Identificador de la cuenta que se utilizará en procesos transaccionales.
+Identificador tipo de cuenta | Identificador del tipo de cuenta.
+Nombre tipo de cuenta | Nombre del tipo de cuenta.
 
 ## Consultar movimientos de una cuenta
 
@@ -110,26 +110,26 @@ Obtiene la información de transacciones financieras realizadas en una cuenta.
 
 ### Valores de la solicitud
 
-Campo | Tipo de dato | Descripción | Requerido
-:---: | :----------: | ----------- | :-------:
-Tipo de documento | `string` | Tipo de documento del afiliado. Cualquier valor de la columna **Acrónimo** en el dominio de los **[Tipos de documento](product-inquiry.md#docType)**. Valor esperado en la URL sin corchetes. | [x]
-Número de documento | `string` | Número de documento del afiliado. Valor esperado en la URL sin corchetes. | [x]
-Identificador de cuenta | `string` | Identificador de la cuenta para la que se obtienen los saldos (Corresponde con el valor del atributo `Identificador` de la respuesta de la consulta de cuentas). Valor esperado en la URL sin corchetes. | [x]
-Identificador tipo de cuenta | `string` | Identificador del tipo de cuenta. **Aplica para las cuentas débito**. (Corresponde con el valor del atributo `Identificador` de la respuesta de la consulta de cuentas) Puede usar asterisco (`*`) para consultar los últimos movimientos de todo el producto. Valor esperado en la URL sin corchetes. |
+Campo | Descripción | Requerido
+:---: | ----------- | :-------:
+Tipo de documento | Tipo de documento del afiliado. Cualquier valor de la columna **Acrónimo** en el dominio de los **[Tipos de documento](product-inquiry.md#docType)**. Valor esperado en la URL sin corchetes. | [x]
+Número de documento | Número de documento del afiliado. Valor esperado en la URL sin corchetes. | [x]
+Identificador de cuenta | Identificador de la cuenta para la que se obtienen los saldos (Corresponde con el valor del atributo `Identificador` de la respuesta de la consulta de cuentas). Valor esperado en la URL sin corchetes. | [x]
+Identificador tipo de cuenta | Identificador del tipo de cuenta. **Aplica para las cuentas débito**. (Corresponde con el valor del atributo `Identificador` de la respuesta de la consulta de cuentas) Puede usar asterisco (`*`) para consultar los últimos movimientos de todo el producto. Valor esperado en la URL sin corchetes. |
 
 
 ### Valores de la respuesta
 
-Campo | Tipo de dato | Descripción
-:---: | :----------: | -----------
-Identificador tipo de cuenta | `string` | Identificador del tipo de cuenta que afectó el movimiento/transacción.
-Nombre tipo de cuenta | `string` | Nombre del tipo de cuenta que afectó el movimiento/transacción.
-Monto | `decimal` | Valor por el que se realizó el movimiento/transacción.
-Comercio | `string` | Nombre del comercio donde se realizó el movimiento/transacción.
-Naturaleza contable | `int` | Define la naturaleza contable de la transacción financiera. **[Tipos de categoria](product-inquiry.md#categories)**
-Fecha | `datetime` | Fecha y hora en que se realizó el movimiento/transacción.
-Nombre movimiento | `string` | Nombre que representa el tipo de movimiento/transacción.
-Código tipo de movimiento | `string` | Código que representa el tipo de movimiento/transacción.
+Campo | Descripción
+:---: | -----------
+Identificador tipo de cuenta | Identificador del tipo de cuenta que afectó el movimiento/transacción.
+Nombre tipo de cuenta | Nombre del tipo de cuenta que afectó el movimiento/transacción.
+Monto | Valor por el que se realizó el movimiento/transacción.
+Comercio | Nombre del comercio donde se realizó el movimiento/transacción.
+Naturaleza contable | Define la naturaleza contable de la transacción financiera. **[Tipos de categoria](product-inquiry.md#categories)**
+Fecha | Fecha y hora en que se realizó el movimiento/transacción.
+Nombre movimiento | Nombre que representa el tipo de movimiento/transacción.
+Código tipo de movimiento | Código que representa el tipo de movimiento/transacción.
 
 #### Tipos de categoria
 
@@ -137,8 +137,8 @@ Código tipo de movimiento | `string` | Código que representa el tipo de movimien
 
 Valor | Nombre | Descripción
 :---: | :----: | -----------
-`0` | Débito | La operación es de tipo débito.
-`1` | Crédito | La operación es de tipo crédito.
+0 | Débito | La operación es de tipo débito.
+1 | Crédito | La operación es de tipo crédito.
 
 ## Anexos
 
