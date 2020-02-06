@@ -23,5 +23,5 @@ nav:
     - Reversos:
         - Reverso de una transacción: reverse.md
     - Consultas:
-        - Consulta de productos de un afiliado
+        - Consulta de productos de un afiliado: product-inquiry.md
 theme: readthedocs
