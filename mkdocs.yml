@@ -22,4 +22,6 @@ nav:
         - Anulación de una transacción: refund.md
     - Reversos:
         - Reverso de una transacción: reverse.md
+    - Consultas:
+        - Consulta de productos de un afiliado
 theme: readthedocs
