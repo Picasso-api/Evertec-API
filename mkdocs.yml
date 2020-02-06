@@ -14,6 +14,7 @@ nav:
         - Compra con token: payment-token.md
         - Consulta de recaudo en línea: collect-inquiry.md
         - Depósito con activación: Deposit.md
+        - Descuento directo a precio: discount.md
         - Generación de token de pagos (Generalidades): generate-payment-token-info.md
         - Generación de token de pagos: generate-payment-token.md        
         - Recaudo en línea: collect.md
