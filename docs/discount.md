@@ -11,28 +11,9 @@ Procesa una solicitud financiera de descuento, parcial o total, que será restad
 
 ## Valores de la solicitud
 
-La información de petición de la transacción se compone de los siguientes valores:
-
-| Valor | Descripción                                      |
-| :---: | --------------------------------------------- |
-Consecutivo de transacción | Identificador único asignado por el cliente a cada transacción. Generalmente definido por un identificador global único ó GUID.
-Código de transacción | Código de transacción de descuento directo a precio predefinido por el API Evertec.
-Identificador de adquiriente | Adquiriente que realiza la activación de la tarjeta. Generalmente incluye los identificadores del almacén y de la terminal de origen.
-Número de tarjeta | Tarjeta que origina la transacción.
-Tipo de cuenta | Cuenta o bolsillo de acumulado de descuento al que se sumará el monto de la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
-Monto | Valor de la transacción.
-
 >Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
 ### Valores de respuesta
-
-La información de respuesta incluye los siguientes valores:
-
-| Valor | Descripción                                      |
-| :---: | --------------------------------------------- |
-Código de respuesta | Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada. El mensaje de respuesta indicará el motivo de declinación.
-Mensaje de respuesta | Descripción del resultado de la ejecución de la transacción correspondiente al código de respuesta.
-Número de autorización | Si la transacción fue exitosa, corresponde al número de validación de la transacción retornado por el API Evertec.
 
 >Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
