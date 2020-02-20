@@ -15,26 +15,13 @@ Obtiene la información resumida de las cuentas o productos asociados a un afili
 *host*: Nombre de dominio o dirección IP del servicio de transacciones.  
 *port*: Número del puerto del servicio de transacciones.
 
-### Valores de la solicitud
+## Valores de la solicitud
 
-Campo | Descripción | Requerido
-:---: | ----------- | :-------:
-Tipo de documento | Tipo de documento del afiliado. Cualquier valor de la columna **Acrónimo** en el dominio de los [Tipos de documento](product-inquiry.md#docType). Valor esperado en la URL sin corchetes. | [x]
-Número de documento | Número de documento del afiliado. Valor esperado en la URL sin corchetes. | [x]
+El contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
+## Valores de respuesta
 
-### Valores de la respuesta
-
-Campo | Descripción
-:---: | -----------
-Identificador | Identificador unívoco de la cuenta.
-Saldo | Valor del saldo actual de la cuenta.
-Número de cuenta | Número enmascarado de la cuenta.
-Orden | Orden del elemento para visualizar en interfaz de usuario.
-Producto | Nombre asignado al producto.
-Propiedades | Es un conjunto de propiedades o atributos que representan información adicional de la cuenta. [Propiedades de una cuenta](product-inquiry.md#accountProperties)
-Origen | Define los sistemas reconocidos desde donde se originaron los datos de la cuenta. [Tipos de sistemas](product-inquiry.md#subsystems)
-Identificador de cuenta origen | Identificador de la cuenta que se utilizará en procesos transaccionales
+El contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
 #### Propiedades de una cuenta
 

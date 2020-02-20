@@ -11,29 +11,11 @@ Procesa una solicitud financiera de recaudo en línea.
 
 ## Valores de la solicitud
 
-La información de petición de la transacción se compone de los siguientes valores:
+El contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
-| Valor | Descripción                                      |
-| :---: | --------------------------------------------- |
-Consecutivo de transacción | Identificador único asignado por el cliente a cada transacción. Generalmente definido por un identificador global único ó GUID.
-Código de transacción | Código de transacción de recaudo en línea predefinido por el API Evertec.
-Identificador de adquiriente | Adquiriente que realiza la activación de la tarjeta. Generalmente incluye los identificadores del almacén y de la terminal de origen.
-Tipo de cuenta | Cuenta o bolsillo de donde se toman los fondos para la transacción. Generalmente este valor lo debe establecer el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia.
-Monto | Valor de la transacción.
+## Valores de respuesta
 
->Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
-
-### Valores de respuesta
-
-La información de respuesta incluye los siguientes valores:
-
-| Valor | Descripción                                      |
-| :---: | --------------------------------------------- |
-Código de respuesta | Tiene valor "00" si la transacción fue exitosa y un código diferente si la transacción fue declinada. El mensaje de respuesta indicará el motivo de declinación.
-Mensaje de respuesta | Descripción del resultado de la ejecución de la transacción correspondiente al código de respuesta.
-Número de autorización | Si la transacción fue exitosa, corresponde al número de validación de la transacción retornado por el API Evertec.
-
->Importante: el contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
+El contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
 ## Estado de HTTP
 
@@ -43,6 +25,6 @@ HttpStatus | Tipo | Descripción
 :---: | :--------: | ------------
 200 | int | Se envío correctamente el mensaje de solicitud de transacción al API Evertec y se obtuvo un mensaje de respuesta por parte del servicio. El resultado de la transacción deberá ser validado según el código y el mensaje incluidos en el mensaje de respuesta.
 401 | int | La solicitud requiere autenticación de usuario. Debe repetir la solicitud con un campo de encabezado de autorización adecuado con las credenciales de autorización otorgadas.
-500 | int | Se produjo un error interno en el servicio del API Evertec. 
+500 | int | Se produjo un error interno en el servicio del API Evertec al procesar la transacción.<br/>**Importante:** Ante el código de respuesta (500), se debe enviar una nueva transacción de reverso de la transacción original.
 
 ## Información relacionada
