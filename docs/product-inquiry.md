@@ -21,7 +21,7 @@ El contrato de transacción detallado deberá ser consultado por el cliente en e
 
 ## Valores de respuesta
 
-El contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
+El contrato de transacción detallado para los valores de respuesta deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
 #### Propiedades de una cuenta
 
@@ -65,22 +65,12 @@ Obtiene los saldos (balances) detallados de una cuenta débito.
 
 ### Valores de la solicitud
 
-Campo | Descripción | Requerido
-:---: | ----------- | :-------:
-Tipo de documento | Tipo de documento del afiliado. Cualquier valor de la columna **Acrónimo** en el dominio de los **[Tipos de documento](product-inquiry.md#docType)**. Valor esperado en la URL sin corchetes. | [x]
-Número de documento | Número de documento del afiliado. Valor esperado en la URL sin corchetes. | [x]
-Identificador de cuenta | Identificador de la cuenta para la que se obtienen los saldos (Corresponde con el valor del atributo `Identificador` de la respuesta de la consulta de cuentas). Valor esperado en la URL sin corchetes. | [x]
+El contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
 
 ### Valores de la respuesta
 
-Campo | Descripción
-:---: | -----------
-Saldo | Valor del saldo actual de la cuenta.
-Número de cuenta | Número enmascarado de la cuenta.
-Identificador de cuenta origen | Identificador de la cuenta que se utilizará en procesos transaccionales.
-Identificador tipo de cuenta | Identificador del tipo de cuenta.
-Nombre tipo de cuenta | Nombre del tipo de cuenta.
+El contrato de transacción detallado para los valores de respuesta deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
 ## Consultar movimientos de una cuenta
 
@@ -97,26 +87,12 @@ Obtiene la información de transacciones financieras realizadas en una cuenta.
 
 ### Valores de la solicitud
 
-Campo | Descripción | Requerido
-:---: | ----------- | :-------:
-Tipo de documento | Tipo de documento del afiliado. Cualquier valor de la columna **Acrónimo** en el dominio de los **[Tipos de documento](product-inquiry.md#docType)**. Valor esperado en la URL sin corchetes. | [x]
-Número de documento | Número de documento del afiliado. Valor esperado en la URL sin corchetes. | [x]
-Identificador de cuenta | Identificador de la cuenta para la que se obtienen los saldos (Corresponde con el valor del atributo `Identificador` de la respuesta de la consulta de cuentas). Valor esperado en la URL sin corchetes. | [x]
-Identificador tipo de cuenta | Identificador del tipo de cuenta. **Aplica para las cuentas débito**. (Corresponde con el valor del atributo `Identificador` de la respuesta de la consulta de cuentas) Puede usar asterisco (`*`) para consultar los últimos movimientos de todo el producto. Valor esperado en la URL sin corchetes. |
+El contrato de transacción detallado deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.|
 
 
 ### Valores de la respuesta
 
-Campo | Descripción
-:---: | -----------
-Identificador tipo de cuenta | Identificador del tipo de cuenta que afectó el movimiento/transacción.
-Nombre tipo de cuenta | Nombre del tipo de cuenta que afectó el movimiento/transacción.
-Monto | Valor por el que se realizó el movimiento/transacción.
-Comercio | Nombre del comercio donde se realizó el movimiento/transacción.
-Categoría | Define la naturaleza contable de la transacción financiera. **[Tipos de categoría](product-inquiry.md#categories)**
-Fecha | Fecha y hora en que se realizó el movimiento/transacción.
-Nombre movimiento | Nombre que representa el tipo de movimiento/transacción.
-Código movimiento | Código que representa el tipo de movimiento/transacción.
+El contrato de transacción detallado para los valores de respuesta deberá ser consultado por el cliente en el documento de especificación técnica proporcionado.
 
 #### Tipos de categoría
 

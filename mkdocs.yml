@@ -19,6 +19,8 @@ nav:
         - Generación de token de pagos: generate-payment-token.md        
         - Recaudo en línea: collect.md
         - Retiro o avance con token: withdrawal-token.md
+        - Activación y asignación de clave: ActivateCard.md
+        - Actualización de datos: DataUpdate.md
     - Anulaciones:
         - Anulación de una transacción: refund.md
     - Reversos:
