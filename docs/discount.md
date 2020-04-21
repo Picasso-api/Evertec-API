@@ -1,6 +1,6 @@
 # Descuento directo a precio
 
-Procesa una solicitud financiera de descuento, parcial o total, que será restado del cupo mensual de descuento asignado al afiliado y sumado al acumulado de descuento del afiliado.
+Procesa una solicitud financiera de descuento parcial o total, que será restado del cupo mensual de descuento asignado al afiliado. Si el descuento es acumulado a la tarjeta, este valor de descuento otorgado se acumula en la tarjeta del afiliado.
 
 | Verbo | Endpoint                                      | Requiere autenticación |
 | :---: | --------------------------------------------- | :--------------------: |
